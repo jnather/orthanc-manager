@@ -1,3 +1,45 @@
+"""
+Orthanc Manager - Flask Application
+Author: Julio Cesar Nather Junior
+Year: 2024
+
+Description:
+This Python script implements a Flask web application for managing an Orthanc DICOM server. It provides an intuitive
+user interface for performing various tasks such as adding, listing, and deleting DICOM modalities, as well as checking
+the server status. The application is designed to enhance productivity and efficiency in medical imaging workflows by
+offering a clean and easy-to-use web interface.
+
+Functionalities:
+1. Index Page ("/"):
+   - Displays a welcome message and provides navigation to other sections of the application.
+
+2. Modalities Management ("/modalities"):
+   - Lists all existing DICOM modalities configured on the Orthanc server.
+   - Provides forms to add new modalities and delete existing ones.
+
+3. Server Status ("/status"):
+   - Displays the current status and configuration details of the Orthanc server, including API version, DICOM AET,
+     and other relevant information.
+
+4. About Page ("/about"):
+   - Provides information about the project, including its purpose and authorship.
+
+5. Secure Communication:
+   - The application supports HTTPS communication using a self-signed SSL certificate. The SSL context is configured
+     to use 'cert.pem' and 'key.pem' files, which should be generated using OpenSSL or similar tools.
+
+Configuration:
+- Orthanc server details such as URL, username, and password are stored in a '.env' file for security and ease of
+  configuration. The 'python-dotenv' package is used to load these environment variables into the application.
+
+Usage:
+- Run the application using a Python environment with Flask installed.
+- Access the application via a web browser at the configured IP address and port (default: https://0.0.0.0:5000).
+
+THIS IS FOR TEST ONLY ! NOT FOR MEDICAL USE !
+"""
+
+
 from flask import Flask, jsonify, request, render_template, redirect, url_for
 import requests
 from requests.auth import HTTPBasicAuth
