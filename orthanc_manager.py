@@ -24,10 +24,6 @@ Functionalities:
 4. About Page ("/about"):
    - Provides information about the project, including its purpose and authorship.
 
-5. Secure Communication:
-   - The application supports HTTPS communication using a self-signed SSL certificate. The SSL context is configured
-     to use 'cert.pem' and 'key.pem' files, which should be generated using OpenSSL or similar tools.
-
 Configuration:
 - Orthanc server details such as URL, username, and password are stored in a '.env' file for security and ease of
   configuration. The 'python-dotenv' package is used to load these environment variables into the application.
