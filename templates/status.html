@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="card">
+    <h1>Orthanc Server Status</h1>
+    <ul class="status-list">
+        <li>API Version: {{ status.ApiVersion }}</li>
+        <li>Database Backend Plugin: {{ status.DatabaseBackendPlugin }}</li>
+        <li>Database Version: {{ status.DatabaseVersion }}</li>
+        <li>DICOM AET: {{ status.DicomAet }}</li>
+        <li>DICOM Port: {{ status.DicomPort }}</li>
+        <li>HTTP Port: {{ status.HttpPort }}</li>
+        <li>Is HTTP Server Secure: {{ status.IsHttpServerSecure }}</li>
+        <li>Instance Name: {{ status.Name }}</li>
+        <li>Plugins Enabled: {{ status.PluginsEnabled }}</li>
+        <li>Storage Area Plugin: {{ status.StorageAreaPlugin }}</li>
+        <li>Orthanc Version: {{ status.Version }}</li>
+    </ul>
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">Back to Home</a>
+</section>
+{% endblock %}

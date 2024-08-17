@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="welcome-section">
+    <h1>Welcome to Orthanc Admin</h1>
+    <p>Manage your Orthanc server from this interface. Use the navigation links above to access different sections:</p>
+    <ul class="feature-list">
+        <li><a href="{{ url_for('list_modalities') }}" class="btn btn-primary">Manage Modalities</a></li>
+        <li><a href="{{ url_for('server_status') }}" class="btn btn-secondary">View Server Status</a></li>
+    </ul>
+</section>
+{% endblock %}

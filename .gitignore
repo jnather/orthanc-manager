@@ -1,0 +1,85 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment Variables
+.env
+
+# Flask-Specific Files
+instance/
+*.db
+*.sqlite3
+
+# Environment folders
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.menv/
+
+# VS Code settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Test result files
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+nosetests.xml
+coverage/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# macOS system files
+.DS_Store
+
+# Logs
+*.log
+
+# Docker files
+docker-compose.override.yml
+
+# MySQL dump files
+*.sql
+
+# SQLAlchemy
+*.db
+*.sqlite
+
+# Editor & IDE Specific
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+*.swp
